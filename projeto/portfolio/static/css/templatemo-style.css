@@ -349,16 +349,16 @@ header {
   margin-top: 0px;
   margin-bottom: 15px;
   font-size: 50px;
-  color: #000066;
+  color: #fff;
   font-weight: 700;
-  text-shadow: 1px 1px 1px #fff7b5;
+  text-shadow: 0 0 3px #000000, 0 0 5px #0000FF;
 }
 
 .Modern-Slider .info p {
   font-size: 25px;
   font-weight: 500;
-  color: #000066;
-  text-shadow: 0.5px 0.5px 0.5px #fff7b5;
+  color: #fff;
+  text-shadow: 0 0 3px #000000, 0 0 5px #0000FF;
 }
 
 
