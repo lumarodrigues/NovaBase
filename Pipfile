@@ -9,6 +9,7 @@ django-phone-field = "*"
 python-decouple = "*"
 pytest-django = "*"
 gunicorn = "*"
+whitenoise = "*"
 
 [dev-packages]
 
