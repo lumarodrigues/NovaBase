@@ -7,7 +7,7 @@ name = "pypi"
 django = "*"
 django-phone-field = "*"
 python-decouple = "*"
-pytest = "*"
+pytest-django = "*"
 
 [dev-packages]
 
