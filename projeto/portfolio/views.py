@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from django.core.mail import send_mail
 
+from projeto.forms import ContactForm
+
 
 def home(request):
     if request.method == 'POST':
@@ -13,11 +15,17 @@ def home(request):
         send_mail(
 
             'Mensagem de ' + name,
-            message + phone,
+            message + '\nTelefone: ' + phone,
             email,
-            [rdsluma@gmail.com],
+            ['rdsluma@gmail.com'],
 
         )
         return render(request, 'portfolio/home.html', {})
     else:
         return render(request, 'portfolio/home.html', {})
+
+
+def autocad(request):
+    return render(request, 'portfolio/autocad.html')
+
+

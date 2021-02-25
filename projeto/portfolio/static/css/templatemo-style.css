@@ -180,7 +180,7 @@ header {
   float: left;
   height: 100%;
   position: fixed;
-  background-color: rgba(0,0,102,0.95);
+  background-color: rgba(0,0,102,0.9);
   z-index: 10;
 }
 
@@ -193,6 +193,7 @@ header {
   padding: 20px;
   text-align: center;
   opacity: 100%
+
 }
 
 .sidebar-navigation .logo a {

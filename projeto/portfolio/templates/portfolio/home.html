@@ -1,87 +1,8 @@
+{% extends 'portfolio/base.html' %}
+
 {% load static %}
 
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>NOVA Base Cursos</title>
-
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" href="{% static 'apple-touch-icon.png' %}">
-
-        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
-        <link rel="stylesheet" href="{% static 'css/bootstrap-theme.min.css' %}">
-        <link rel="stylesheet" href="{% static 'css/fontAwesome.css' %}">
-        <link rel="stylesheet" href="{% static 'css/light-box.css' %}">
-        <link rel="stylesheet" href="{% static 'css/owl-carousel.css' %}">
-        <link rel="stylesheet" href="{% static 'css/templatemo-style.css' %}">
-
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-
-        <script src="{% static '/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js' %}"></script>
-        <link rel="icon" type="image/png" href="{% static 'img/favicon.png' %}"/>
-
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
-    <script src="{% static 'js/vendor/bootstrap.min.js' %}"></script>
-
-    <script src="{% static 'js/plugins.js' %}"></script>
-    <script src="{% static 'js/main.js' %}"></script>
-
-    <script>
-        // Hide Header on on scroll down
-        var didScroll;
-        var lastScrollTop = 0;
-        var delta = 5;
-        var navbarHeight = $('header').outerHeight();
-
-        $(window).scroll(function(event){
-            didScroll = true;
-        });
-
-        setInterval(function() {
-            if (didScroll) {
-                hasScrolled();
-                didScroll = false;
-            }
-        }, 250);
-
-        function hasScrolled() {
-            var st = $(this).scrollTop();
-
-            // Make sure they scroll more than delta
-            if(Math.abs(lastScrollTop - st) <= delta)
-                return;
-
-            // If they scrolled down and are past the navbar, add class .nav-up.
-            // This is necessary so you never see what is "behind" the navbar.
-            if (st > lastScrollTop && st > navbarHeight){
-                // Scroll Down
-                $('header').removeClass('nav-down').addClass('nav-up');
-            } else {
-                // Scroll Up
-                if(st + $(window).height() < $(document).height()) {
-                    $('header').removeClass('nav-up').addClass('nav-down');
-                }
-            }
-
-            lastScrollTop = st;
-        }
-    </script>
-
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
-
-
-
-
-    </head>
-
-<body>
-
-
+{% block body %}
 
         <header class="nav-down responsive-nav hidden-lg hidden-md">
             <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
@@ -220,7 +141,7 @@
                             <div class="image">
                                 <img src="{% static 'img/autocad_total.PNG' %}" alt="">
                                 <div class="featured-button button">
-                                    <a href="#projects">Saiba Mais</a>
+                                    <a href="{% url 'autocad' %}" target="_blank">Saiba Mais</a>
                                 </div>
                             </div>
                             <div class="text-content">
@@ -490,59 +411,5 @@
                 </div>
             </section>
 
-            <section id="contact" class="content-section">
-                <div id="map">
-                    <iframe width="100%" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=rua%20tenente%20coronel%20cardoso%20422%20sala%2002&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                </div>
-                <div id="contact-content">
-                    <div class="section-heading">
-                        <h1>Contato<br><em>NOVA Base Cursos</em></h1>
-                        <p>Para mais informações, entre em contato conosco.
-                        <br>Por telefone: (22) 99925 - 9350.
-                        <br>Ou através do nosso email:</p>
 
-                    </div>
-                    <div class="section-content">
-                        <form id="contact" action="#" method="POST">
-                            {% csrf_token %}
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <fieldset>
-                                    <input name="name" type="text" class="form-control" id="name" placeholder="Seu nome" value="{{ form.nome }} required="">
-                                  </fieldset>
-                                </div>
-                                <div class="col-md-4">
-                                  <fieldset>
-                                    <input name="email" type="email" class="form-control" id="email" placeholder="Seu email" value="{{ form.email }} required="">
-                                  </fieldset>
-                                </div>
-                                 <div class="col-md-4">
-                                  <fieldset>
-                                    <input name="phone" type="text" class="form-control" id="phone" placeholder="Telefone" value="{{ form.phone }} required="">
-                                  </fieldset>
-                                </div>
-                                <div class="col-md-12">
-                                  <fieldset>
-                                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="Sua mensagem" value="{{ form.message }} required=""></textarea>
-                                  </fieldset>
-                                </div>
-                                <div class="col-md-12">
-                                  <fieldset>
-                                    <button type="submit" id="form-submit" class="btn">Enviar</button>
-                                  </fieldset>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </section>
-
-            <section class="footer">
-                <p>Copyright &copy; {% now "Y" %} NOVA Base Cursos</p>
-            </section>
-        </div>
-
-
-
-</body>
-</html>
+{% endblock body %}

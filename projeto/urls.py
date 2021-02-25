@@ -16,9 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from projeto.portfolio.views import home
+from projeto.portfolio.views import home, autocad
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', home, name='home')
+    path('', home, name='home'),
+    path('autocad', autocad, name='autocad'),
 ]
