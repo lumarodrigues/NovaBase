@@ -9,7 +9,8 @@ django-phone-field = "*"
 python-decouple = "*"
 pytest-django = "*"
 gunicorn = "*"
-whitenoise = "*"
+django-s3-folder-storage = "*"
+collectfast = "*"
 
 [dev-packages]
 
