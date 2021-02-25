@@ -11,6 +11,7 @@ pytest-django = "*"
 gunicorn = "*"
 django-s3-folder-storage = "*"
 collectfast = "*"
+django-cors-headers = "*"
 
 [dev-packages]
 
