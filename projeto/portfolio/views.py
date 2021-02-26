@@ -12,14 +12,14 @@ def home(request):
         phone = request.POST['phone']
         message = request.POST['message']
 
-        send_mail(
+        '''send_mail(
 
             'Mensagem de ' + name,
             message + '\nTelefone: ' + phone,
             email,
             ['rdsluma@gmail.com'],
 
-        )
+        )'''
         return render(request, 'portfolio/home.html', {})
     else:
         return render(request, 'portfolio/home.html', {})
