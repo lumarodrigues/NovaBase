@@ -156,11 +156,11 @@
                             <div class="image">
                                 <img src="{% static 'img/desenvolvedor_jogos.PNG' %}" alt="">
                                 <div class="featured-button button">
-                                    <a href="#projects">Saiba Mais</a>
+                                    <a href="{% url 'dev_games' %}" target="_blank">Saiba Mais</a>
                                 </div>
                             </div>
                             <div class="text-content">
-                                <h4>Desenvolvedor de Jogos</h4>
+                                <h4>Desenvolvedor de Jogos (HTML5)</h4>
                                 <span>Games</span>
                                 <p>Usuários que desejam ingressar na área de desenvolvimento de jogos, uma área promissora que cresce
                                     a cada dia. Nesse pacote, desde o início do curso, o aluno aprenderá desenvolvendo diversos jogos
@@ -172,28 +172,13 @@
                             <div class="image">
                                 <img src="{% static 'img/design_grafico.PNG' %}" alt="">
                                 <div class="featured-button button">
-                                    <a href="#projects">Saiba Mais</a>
+                                    <a href="{% url 'designer' %}" target="_blank">Saiba Mais</a>
                                 </div>
                             </div>
                             <div class="text-content">
-                                <h4>Designer Gráfico I</h4>
+                                <h4>Designer Gráfico I e II</h4>
                                 <span>Profissionalizante</span>
-                                <p>Usuários que procuram um curso completo na área de design gráfico. Além de ter a formação em
-                                programas para artes finais, o aluno terá conhecimento para que possa trabalhar com editoração de
-                                jornais/revistas/documentos.</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="image">
-                                <img src="{% static 'img/designer_grafico_II.PNG' %}" alt="">
-                                <div class="featured-button button">
-                                    <a href="#projects">Saiba Mais</a>
-                                </div>
-                            </div>
-                            <div class="text-content">
-                                <h4>Designer Gráfico II</h4>
-                                <span>Profissionalizante</span>
-                                <p>Usuários que procuram um curso completo na área de design gráfico. Além de ter a formação em
+                                <p>Usuários que procuram um cursos completos na área de design gráfico. Além de ter a formação em
                                 programas para artes finais, o aluno terá conhecimento para que possa trabalhar com editoração de
                                 jornais/revistas/documentos.</p>
                             </div>
@@ -202,7 +187,7 @@
                             <div class="image">
                                 <img src="{% static 'img/editor_videos.PNG' %}" alt="">
                                 <div class="featured-button button">
-                                    <a href="#projects">Saiba Mais</a>
+                                    <a href="{% url 'editor_videos' %}" target="_blank">Saiba Mais</a>
                                 </div>
                             </div>
                             <div class="text-content">
@@ -215,39 +200,24 @@
                             <div class="image">
                                 <img src="{% static 'img/empreendedor_digital.PNG' %}" alt="">
                                 <div class="featured-button button">
-                                    <a href="#projects">Saiba Mais</a>
+                                    <a href="{% url 'dev_frontend' %}" target="_blank">Saiba Mais</a>
                                 </div>
                             </div>
                             <div class="text-content">
-                                <h4>Empreendedor Digital</h4>
+                                <h4>Desenvolvedor Front-End</h4>
                                 <span>Profissionalizante</span>
-                                <p>Usuários que desejam compreender os conceitos relativos ao Empreendedorismo; identificar oportunidades
-                                de negócios digitais e desenvolver visionário seu potencial para vendas e marketing.</p>
+                                <p>Usuários que precisam da base para se tornar um desenvolvedor web. O pacote aborda as principais
+                                ferramentas para essa função, desde a elaboração de elementos gráficos como: botões, efeitos,
+                                tratamento de imagens para a Web e até a construção da estrutura dos sites.</p>
 
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="image">
-                                <img src="{% static 'img/emprego_ja.PNG' %}" alt="">
-                                <div class="featured-button button">
-                                    <a href="#projects">Saiba Mais</a>
-                                </div>
-                            </div>
-                            <div class="text-content">
-                                <h4>Emprego Já!</h4>
-                                <span>Profissionalizante</span>
-                                <p>Usuários que buscam conhecer as etapas existentes
-                                    durante a procura de um novo emprego, focando
-                                    nos novos modelos de recrutamento e como se
-                                    portar durante este processo. Técnicas de oratório e marketing pessoal.
-                                Montagem de currículos.</p>
-                            </div>
-                        </div>
+
                         <div class="item">
                             <div class="image">
                                 <img src="{% static 'img/excel_total.PNG' %}" alt="">
                                 <div class="featured-button button">
-                                    <a href="#projects">Saiba Mais</a>
+                                    <a href="{% url 'excel' %}" target="_blank">Saiba Mais</a>
                                 </div>
                             </div>
                             <div class="text-content">
@@ -258,68 +228,41 @@
                                 no aprimoramento do uso do Excel.</p>
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="image">
-                                <img src="{% static 'img/ingles.PNG' %}" alt="">
-                                <div class="featured-button button">
-                                    <a href="#projects">Saiba Mais</a>
-                                </div>
-                            </div>
-                            <div class="text-content">
-                                <h4>Inglês</h4>
-                                <span>"O Cara do Inglês"</span>
-                                <p>Usuários que desejam dominar um novo idioma.</p>
-                            </div>
-                        </div>
+
                         <div class="item">
                             <div class="image">
                                 <img src="{% static 'img/operador_computador_I.jpg' %}" alt="">
                                 <div class="featured-button button">
-                                    <a href="#projects">Saiba Mais</a>
+                                    <a href="{% url 'operador' %}" target="_blank">Saiba Mais</a>
                                 </div>
                             </div>
                             <div class="text-content">
-                                <h4>Operador de Computador I</h4>
+                                <h4>Operador de Computador I e II</h4>
                                 <span>Profissionalizante</span>
                                 <p>A usuários iniciantes que desejam aprender a utilizar o computador e os programas essenciais utilizados
                                 no mercado, em um tempo mais rápido.</p>
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="image">
-                                <img src="{% static 'img/operador_computador_II.PNG' %}" alt="">
-                                <div class="featured-button button">
-                                    <a href="#projects">Saiba Mais</a>
-                                </div>
-                            </div>
-                            <div class="text-content">
-                                <h4>Operador de Computador II</h4>
-                                <span>Profissionalizante</span>
-                                <p>Usuários iniciantes que desejam aprender a utilizar o computador, além dos programas essenciais
-                                 (Windows, Word, Excel), o pacote inclui o PowerPoint para que o aluno aprenda realizar apresentações
-                                 de trabalhos escolares ou trabalhos na empresa que trabalha. Além disso, terá um curso completo de
-                                    Internet e também um curso para orientação de como o aluno vai montar o seu curriculum.</p>
-                            </div>
-                        </div>
+
                         <div class="item">
                             <div class="image">
                                 <img src="{% static 'img/profissional_capacitado_VIP.PNG' %}" alt="">
                                 <div class="featured-button button">
-                                    <a href="#projects">Saiba Mais</a>
+                                    <a href="{% url 'curso_rapido' %}" target="_blank">Saiba Mais</a>
                                 </div>
                             </div>
                             <div class="text-content">
-                                <h4>Profissional Capacitado VIP</h4>
+                                <h4>Curso Rápido</h4>
                                 <span>Profissionalizante</span>
-                                <p>Usuários focados em aprender sobre rotinas administrativas e outras
-                                ferramentas essenciais para o mercado de trabalho.</p>
+                                <p>Usuários que tem pressa em aprender as principais ferramentas de utilização do computador (Windows,
+                                    Word e Excel) e também todo o conceito essencial para a navegação e utilização da internet.</p>
                             </div>
                         </div>
                         <div class="item">
                             <div class="image">
                                 <img src="{% static 'img/projetista_completo.PNG' %}" alt="">
                                 <div class="featured-button button">
-                                    <a href="#projects">Saiba Mais</a>
+                                    <a href="{% url 'projetista' %}" target="_blank">Saiba Mais</a>
                                 </div>
                             </div>
                             <div class="text-content">
@@ -333,7 +276,7 @@
                             <div class="image">
                                 <img src="{% static 'img/rotinas_administrativas.PNG' %}" alt="">
                                 <div class="featured-button button">
-                                    <a href="#projects">Saiba Mais</a>
+                                    <a href="{% url 'rotinas_adm' %}" target="_blank">Saiba Mais</a>
                                 </div>
                             </div>
                             <div class="text-content">
@@ -350,13 +293,15 @@
                             <div class="image">
                                 <img src="{% static 'img/web_design_grafico.PNG' %}" alt="">
                                 <div class="featured-button button">
-                                    <a href="#projects">Saiba Mais</a>
+                                    <a href="{% url 'profissionalizante' %}" target="_blank">Saiba Mais</a>
                                 </div>
                             </div>
                             <div class="text-content">
-                                <h4>Web Design Básico</h4>
+                                <h4>Profissionalizante</h4>
                                 <span>Profissionalizante</span>
-                                <p>Usuários que desejam dominar técnicas de design para desenvolvimento web.</p>
+                                <p>Usuários iniciantes que desejam um curso completo profissionalizante, podendo atuar depois em
+                            várias áreas de atuação dentro da informática. O curso ainda conta com o aprendizado de Rotinas
+                            Administrativas, para que o aluno se torne um profissional preparado para o mercado de trabalho.</p>
                             </div>
                         </div>
                     </div>

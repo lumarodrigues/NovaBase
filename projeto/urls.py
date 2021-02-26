@@ -16,10 +16,21 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from projeto.portfolio.views import home, autocad
+from projeto.portfolio.views import home, autocad, operador, curso_rapido, designer, dev_frontend, dev_games, \
+    editor_videos, excel, profissionalizante, projetista, rotinas_adm
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home, name='home'),
     path('autocad', autocad, name='autocad'),
+    path('operador', operador, name='operador'),
+    path('curso_rapido', curso_rapido, name='curso_rapido'),
+    path('designer', designer, name='designer'),
+    path('dev_frontend', dev_frontend, name='dev_frontend'),
+    path('dev_games', dev_games, name='dev_games'),
+    path('editor_videos', editor_videos, name='editor_videos'),
+    path('excel', excel, name='excel'),
+    path('profissionalizante', profissionalizante, name='profissionalizante'),
+    path('projetista', projetista, name='projetista'),
+    path('rotinas_adm', rotinas_adm, name='rotinas_adm'),
 ]
