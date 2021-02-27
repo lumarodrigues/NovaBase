@@ -25,7 +25,6 @@ def home(request):
     else:
         return render(request, 'portfolio/home.html', {})
 
-
 def autocad(request):
     return render(request, 'portfolio/autocad.html')
 

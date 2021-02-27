@@ -2,10 +2,17 @@
 
 {% load static %}
 
+{% block home %}<a href="{% url 'home' %}">
+                   <span class="rect"></span>
+                   <span class="circle"></span>
+                   Home
+                </a>{% endblock home %}
+
 {% block body %}
 
+
 <div class="page-content">
-        <section id="projects" class="content-section" class="descricao">
+        <section id="featured" class="content-section">
                 <div class="section-heading">
                     <h1>AutoCAD<br><em>TOTAL</em></h1>
                     <h3><em>Público alvo:</em> Usuários que desejam se tornar um cadista, que é o profissional que trabalha com a ferramenta CAD,
