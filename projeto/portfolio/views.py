@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.core.mail import send_mail
 
 from projeto.forms import ContactForm
+from projeto.settings import EMAIL_HOST_USER
 
 
 def home(request):
@@ -12,14 +13,14 @@ def home(request):
         phone = request.POST['phone']
         message = request.POST['message']
 
-        '''send_mail(
+        send_mail(
 
             'Mensagem de ' + name,
             message + '\nTelefone: ' + phone,
             email,
-            ['rdsluma@gmail.com'],
+            [EMAIL_HOST_USER],
 
-        )'''
+        )
         return render(request, 'portfolio/home.html', {})
     else:
         return render(request, 'portfolio/home.html', {})
