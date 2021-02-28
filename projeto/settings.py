@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config('DEBUG', cast=bool)
+DEBUG = True #config('DEBUG', cast=bool)
 
 ALLOWED_HOSTS = ['*']
 
@@ -85,7 +85,6 @@ EMAIL_BACKEND = config('EMAIL_BACKEND')
 SENDGRID_API_KEY = config('SENDGRID_API_KEY')
 SENDGRID_SANDBOX_MODE_IN_DEBUG = False
 EMAIL_USER = config('EMAIL_USER')
-
 
 
 
