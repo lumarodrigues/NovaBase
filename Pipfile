@@ -12,6 +12,7 @@ gunicorn = "*"
 django-s3-folder-storage = "*"
 collectfast = "*"
 django-cors-headers = "*"
+django-sendgrid-v5 = "*"
 
 [dev-packages]
 

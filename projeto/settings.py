@@ -80,12 +80,13 @@ WSGI_APPLICATION = 'projeto.wsgi.application'
 
 # Configuração de envio de email
 
+
 EMAIL_BACKEND = config('EMAIL_BACKEND')
-EMAIL_HOST = config('EMAIL_HOST')
-EMAIL_PORT = config('EMAIL_PORT')
-EMAIL_HOST_USER = config('EMAIL_HOST_USER')
-EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
-EMAIL_USE_TLS = config('EMAIL_USE_TLS')
+SENDGRID_API_KEY = config('SENDGRID_API_KEY')
+SENDGRID_SANDBOX_MODE_IN_DEBUG = False
+EMAIL_USER = config('EMAIL_USER')
+
+
 
 
 # Database

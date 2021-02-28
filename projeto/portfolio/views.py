@@ -1,8 +1,9 @@
 from django.shortcuts import render
-from django.core.mail import send_mail
-
+from django.core.mail import send_mail, BadHeaderError
 from projeto.forms import ContactForm
-from projeto.settings import EMAIL_HOST_USER
+from django.http import HttpResponse
+
+from projeto.settings import EMAIL_USER
 
 
 def home(request):
@@ -13,17 +14,14 @@ def home(request):
         phone = request.POST['phone']
         message = request.POST['message']
 
-        send_mail(
+        try:
+            send_mail('Mensagem de ' + name, message + '\n\nTelefone: ' + phone + '\n\nEmail: ' + email,
+                      [EMAIL_USER], [EMAIL_USER], fail_silently=False,)
+        except BadHeaderError:
+            return HttpResponse('Invalid header found.')
+        return HttpResponse('Email successfully sent!')
 
-            'Mensagem de ' + name,
-            message + '\nTelefone: ' + phone,
-            email,
-            [EMAIL_HOST_USER],
-
-        )
-        return render(request, 'portfolio/home.html', {})
-    else:
-        return render(request, 'portfolio/home.html', {})
+    return render(request, 'portfolio/home.html')
 
 def autocad(request):
     return render(request, 'portfolio/autocad.html')
