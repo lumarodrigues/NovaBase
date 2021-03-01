@@ -82,8 +82,6 @@
 
 <body>
 
-
-
         <header class="nav-down responsive-nav hidden-lg hidden-md">
             <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
                 <span class="sr-only">Toggle navigation</span>
@@ -92,10 +90,9 @@
                 <span class="icon-bar"></span>
             </button>
 
-
         </header>
 
-        <div class="sidebar-navigation hidde-sm hidden-xs">
+        <div class="sidebar-navigation hidden-sm hidden-xs">
             <div class="logo">
                 <a href="{% url 'home' %}">
                     <img src="{% static 'img/logo.png' %}" width = "85%" />
@@ -134,9 +131,17 @@
                 </ul>
             </nav>
             <ul class="social-icons">
-                <li><a href="https://www.facebook.com/novabasecursos" target="_blank"><i class="fa fa-facebook fa-lg"></i></a></li>
-                <li><a href="https://www.twitter.com/novabasecursos" target="_blank"><i class="fa fa-twitter fa-lg"></i></a></li>
-                <li><a href="https://www.instagram.com/novabasecursos" target="_blank"><i class="fa fa-instagram fa-lg"></i></a></li>
+
+                <li><a href="https://www.facebook.com/novabasecursos" target="_blank">
+                    <img src="{% static 'img/facebook.png' %}" name='facebook-logo' width="30" height="30">
+                </a></li>
+
+                <li><a href="https://www.twitter.com/novabasecursos" target="_blank">
+                    <img src="{% static 'img/twitter.png' %}" name='twitter-logo' width="30" height="30">
+                </a></li>
+                <li><a href="https://www.instagram.com/novabasecursos" target="_blank">
+                    <img src="{% static 'img/instagram.png' %}" name='instagram-logo' width="30" height="30">
+                </a></li>
             </ul>
         </div>
 
@@ -145,7 +150,7 @@
 
 	        {% endblock body %}
 
-
+        {% block contact %}
         <section id="contact" class="content-section">
                 <div id="map">
                     <iframe width="100%" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=rua%20tenente%20coronel%20cardoso%20422%20sala%2002&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
@@ -154,8 +159,8 @@
                     <div class="section-heading">
                         <h1>Contato<br><em>NOVA Base Cursos</em></h1>
                         <p>Para mais informações, entre em contato conosco.
-                        <br>Por telefone: (22) 99925 - 9350.
-                        <br>Ou através do nosso email:</p>
+                        <br>Telefone/WhatsApp:  (22) 99925 - 9350.
+                        <br>E-mail: novabasecursos@gmail.com</p>
 
                     </div>
                     <div class="section-content">
@@ -192,6 +197,8 @@
                     </div>
                 </div>
             </section>
+
+        {% endblock contact %}
 
         <section class="footer">
                 <p>Copyright &copy; {% now "Y" %} NOVA Base Cursos</p>

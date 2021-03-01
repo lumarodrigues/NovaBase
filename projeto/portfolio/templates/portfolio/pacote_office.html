@@ -1,0 +1,36 @@
+{% extends 'portfolio/base.html' %}
+
+{% load static %}
+
+{% block body %}
+
+<div class="page-content">
+        <section id="projects" class="content-section">
+                <div class="section-heading">
+                    <h1>Pacote <em>Office</em></h1>
+                    <h3><em>Cursos disponíveis na área:</em>
+                        <br>
+                        <br>
+                        &#9655; <a href="{% url 'word' %}">Word</a>
+                        <br>
+                        <br>
+                        &#9655; <a href="{% url 'word_avancado' %}">Word Avançado - TCC</a>
+                        <br>
+                        <br>
+                        &#9655; <a href="{% url 'power_point' %}">Power Point</a>
+                        <br>
+                        <br>
+                        &#9655; <a href="{% url 'excel' %}">Excel</a>
+                        <br>
+                        <br>
+                        &#9655; <a href="{% url 'access' %}">Access</a>
+                        <br>
+                        <br>
+
+                    </h3>
+                </div>
+
+            </section>
+
+{% endblock body %}
+</div>

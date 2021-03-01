@@ -1,0 +1,53 @@
+{% extends 'portfolio/base.html' %}
+
+{% load static %}
+
+{% block body %}
+
+<div class="page-content">
+        <section id="projects" class="content-section">
+                <div class="section-heading">
+                    <h1>Pacotes <em>Especiais</em></h1>
+                    <h3><em>Os pacotes personalizados são:</em>
+                        <br>
+                        <br>
+&#9655; <a href="{% url 'operador_computador' %}">Operador de Computador I e II</a>
+                        <br>
+                        <br>
+&#9655; <a href="{% url 'profissionalizante' %}">Profissionalizante</a>
+                        <br>
+                        <br>
+                        &#9655; <a href="{% url 'curso_rapido' %}">Curso Rápido</a>
+                        <br>
+                        <br>
+&#9655; <a href="{% url 'designer' %}">Designer Gráfico I e II</a>
+                        <br>
+                        <br>
+&#9655; <a href="{% url 'editor_videos' %}">Editor de Vídeos</a>
+                        <br>
+<br>
+&#9655; <a href="{% url 'dev_frontend' %}">Desenvolvedor Front-End</a>
+                        <br>
+                        <br>
+                        &#9655; <a href="{% url 'excel_total' %}">Excel Total</a>
+                        <br>
+<br>
+&#9655; <a href="{% url 'autocad_total' %}">AutoCAD Total</a>
+                        <br>
+                        <br>
+&#9655; <a href="{% url 'projetista' %}">Projetista Completo</a>
+                        <br>
+<br>
+&#9655; <a href="{% url 'dev_games' %}">Desenvolvedor de Jogos (HTML5)</a>
+                        <br>
+                        <br>
+&#9655; <a href="{% url 'rotinas_adm' %}">Rotinas Administrativas</a>
+                        <br>
+                        <br>
+                    </h3>
+                </div>
+
+            </section>
+
+{% endblock body %}
+</div>

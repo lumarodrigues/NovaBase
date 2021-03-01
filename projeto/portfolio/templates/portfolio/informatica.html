@@ -1,0 +1,34 @@
+{% extends 'portfolio/base.html' %}
+
+{% load static %}
+
+{% block body %}
+
+<div class="page-content">
+        <section id="projects" class="content-section">
+                <div class="section-heading">
+                    <h1><em>Informática</em></h1>
+                    <h3><em>Cursos disponíveis na área:</em>
+                        <br>
+                        <br>
+                        &#9655; <a href="{% url 'informatica_kids' %}">Informática Kids</a>
+                                                <br>
+                        <br>
+                        &#9655; <a href="{% url 'informatica_adultos' %}">Informática para Adultos</a>                        <br>
+                        <br>
+                        &#9655; <a href="{% url 'internet' %}">Internet</a>                      <br>
+                        <br>
+                        &#9655; <a href="{% url 'inteligencia_artificial' %}">Introdução à Inteligência Artificial</a>                        <br>
+                        <br>
+                        &#9655; <a href="{% url 'logica_programacao' %}">Lógica de Programação</a>                        <br>
+                        <br>
+                        &#9655; <a href="{% url 'windows' %}">Windows</a>                        <br>
+                        <br>
+
+                    </h3>
+                </div>
+
+            </section>
+
+{% endblock body %}
+</div>
