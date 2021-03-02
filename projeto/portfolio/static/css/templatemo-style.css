@@ -44,12 +44,15 @@ p {
 /* COLORS */
 a:link, a:visited, a:active {
 
-    color: #FF69B4;
+    color: #000066;
+    text-decoration: none;
+
  }
 
 a:hover {
 
-    color: #D6B9D7;
+    color: #00ff00;
+    text-decoration: none;
 
 }
 
@@ -432,15 +435,15 @@ header {
 }
 
 .Modern-Slider .item-1 .image {
-  background-image: url(../img/slide_1.png);
+  background-image: url(../img/1.jpg); /* slide_1.png */
 }
 
 .Modern-Slider .item-2 .image {
-  background-image: url(../img/slide_2.png);
+  background-image: url(../img/2.jpg);
 }
 
 .Modern-Slider .item-3 .image {
-  background-image: url(../img/slide_3.png);
+  background-image: url(../img/3.jpg);
 }
 
 .Modern-Slider .PrevArrow:before{content:'\f104';}

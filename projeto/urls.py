@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from projeto.portfolio.views import home, autocad, curso_rapido, designer, dev_frontend, dev_games, \
+from projeto.portfolio.views import home, curso_rapido, designer, dev_frontend, dev_games, \
     editor_videos, profissionalizante, projetista, rotinas_adm, dsmax, obrigado, desenvolvimento_web, html5, \
     css3, design_mecanico, autocad_base, autocad_3dcivil, autocad_mecanica_base, autocad_projeto_civil, solidworks, \
     revit_base, sketchup, design_grafico, after_effects, corel_draw, express, illustrator, indesign, photoshop, \
@@ -25,14 +25,12 @@ from projeto.portfolio.views import home, autocad, curso_rapido, designer, dev_f
     pacote_office, word, word_avancado, power_point, excel, access, administracao, atendimento_cliente, \
     balconista_farmacia, montagem_curriculo, contabilidade, digitacao, empreendedorismo, emprego_20, gestao_qualidade, \
     lideranca_gestao, logistica, operador_caixa, oratoria, secretariado, tecnicas_redacao, telemarketing, vendas, \
-    matematica_financeira, departamento_pessoal, operador_computador, pacotes, profissionais, autocad_total, excel_total
+    matematica_financeira, departamento_pessoal, operador_computador, pacotes, profissionais, autocad_total, \
+    excel_total, excel_dashboard, inteligencia_emocional
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home, name='home'),
-
-    path('autocad', autocad, name='autocad'),
-
     path('obrigado', obrigado, name='obrigado'),
     path('desenvolvimento_web', desenvolvimento_web, name='desenvolvimento_web'),
     path('desenvolvimento_web/html5', html5, name='html5'),
@@ -72,6 +70,7 @@ urlpatterns = [
     path('pacote_office/word_avancado', word_avancado, name='word_avancado'),
     path('pacote_office/power_point', power_point, name='power_point'),
     path('pacote_office/excel', excel, name='excel'),
+    path('pacote_office/excel_dashboard', excel_dashboard, name='excel_dashboard'),
     path('pacote_office/access', access, name='access'),
     path('profissionais', profissionais, name='profissionais'),
     path('profissionais/administracao', administracao, name='administracao'),
@@ -93,6 +92,7 @@ urlpatterns = [
     path('profissionais/telemarketing', telemarketing, name='telemarketing'),
     path('profissionais/vendas', vendas, name='vendas'),
     path('profissionais/matematica_financeira', matematica_financeira, name='matematica_financeira'),
+    path('profissionais/inteligencia_emocional', inteligencia_emocional, name='inteligencia_emocional'),
     path('pacotes', pacotes, name='pacotes'),
     path('pacotes/operador_computador', operador_computador, name='operador_computador'),
     path('pacotes/profissionalizante', profissionalizante, name='profissionalizante'),
@@ -106,6 +106,5 @@ urlpatterns = [
     path('pacotes/projetista', projetista, name='projetista'),
     path('pacotes/rotinas_adm', rotinas_adm, name='rotinas_adm'),
     path('pacotes/excel_total', excel_total, name='excel_total'),
-
 
 ]

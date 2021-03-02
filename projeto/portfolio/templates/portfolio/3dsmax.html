@@ -2,6 +2,12 @@
 
 {% load static %}
 
+{% block li %}<a href="{% url 'home' %}">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Home
+                        </a>{% endblock li %}
+
 {% block body %}
 
 <div class="page-content">
@@ -9,7 +15,6 @@
                 <div class="section-heading">
                     <h1>3DS <em>Max</em></h1>
                     <br>
-                     <img src="{% static 'img/access1.png' %}" width = "20%" />
                     <br>
                     <h4><em>Descrição:</em> O 3ds Max oferece recursos incríveis para a criação de modelos e animações
                         3D. Com um conjunto de ferramentas criativas para modelagem, animação,

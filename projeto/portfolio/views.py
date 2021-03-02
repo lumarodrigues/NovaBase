@@ -15,16 +15,13 @@ def home(request):
         message = request.POST['message']
 
         try:
-            send_mail('Mensagem de ' + name, message + '\n\nTelefone: ' + phone + '\n\nEmail: ' + email,
+            send_mail('Mensagem de ' + name, 'Nome: ' + name + '\nEmail: ' + email + '\nTelefone: ' + phone + '\n\nMensagem: ' + message,
                       [EMAIL_USER], [EMAIL_USER], fail_silently=False,)
         except BadHeaderError:
             return HttpResponse('Invalid header found.')
         return render(request, 'portfolio/obrigado.html')
 
     return render(request, 'portfolio/home.html')
-
-def autocad(request):
-    return render(request, 'portfolio/autocad.html')
 
 
 def operador_computador(request):
@@ -313,3 +310,11 @@ def autocad_total(request):
 
 def excel_total(request):
     return render(request, 'portfolio/excel_total.html')
+
+
+def excel_dashboard(request):
+    return render(request, 'portfolio/excel_dashboard.html')
+
+
+def inteligencia_emocional(request):
+    return render(request, 'portfolio/inteligencia_emocional.html')
