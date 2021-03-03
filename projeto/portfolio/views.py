@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.core.mail import send_mail, BadHeaderError
 from projeto.forms import ContactForm
 from django.http import HttpResponse
@@ -19,9 +19,9 @@ def home(request):
                       [EMAIL_USER], [EMAIL_USER], fail_silently=False,)
         except BadHeaderError:
             return HttpResponse('Invalid header found.')
-        return render(request, 'portfolio/obrigado.html')
+        return redirect(obrigado)
 
-    return render(request, 'portfolio/home.html')
+    return render(request, 'portfolio/base.html')
 
 
 def operador_computador(request):

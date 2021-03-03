@@ -9,6 +9,13 @@ body {
   font-family: 'Nova';
 }
 
+#page-container {
+
+  position: relative;
+  min-height: 100vh;
+
+}
+
 p {
   font-size: 13px;
   color: #7a7a7a;
@@ -138,7 +145,7 @@ header {
   z-index: 10;
   width: 100%;
   height: 80px;
-  background-color: rgba(250,250,250,.95);
+  background-color: rgba(0,0,102,.95);
   box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
 }
 
@@ -222,7 +229,7 @@ header {
   height: 100px;
   width: 100%;
   display: inline-block;
-  border: 1px solid rgba(250,250,250,0.5);
+  border: 1px solid rgba(0,0,102,0.5);
 }
 
 .sidebar-navigation .logo em {
@@ -399,7 +406,7 @@ header {
   right:60px;
   width:50px;
   height:50px;
-  background:rgba(0,0,0,.50);
+  background:rgba(0,0,102,.50);
   border:0 none;
   margin-top:-22.5px;
   text-align:center;
@@ -871,12 +878,15 @@ header {
 /* Footer Style */
 
 .footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   background-color: rgba(0,0,102,0.90);
   height: 80px;
   line-height: 80px;
   display: inline-block;
   text-align: center;
-  width: 100%;
+
 }
 
 .footer p {

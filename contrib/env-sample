@@ -1,7 +1,7 @@
 DEBUG = False
 SECRET_KEY = Sua chave secreta
 
-ALLOWED_HOSTS = locahost, 127.0.0.1
+ALLOWED_HOSTS = localhost, 127.0.0.1
 
 #Configuração do S3
 AWS_ACCESS_KEY_ID =
