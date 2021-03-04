@@ -94,10 +94,15 @@
             <div id="main-nav" class="collapse navbar-collapse">
                 <nav>
                     <ul class="nav navbar-nav">
-                        <li><a href="#top">Home</a></li>
-                        <li><a href="#featured">Nossos Cursos</a></li>
-                        <li><a href="#projects">Sobre Nós</a></li>
-                        <li><a href="#contact">Contato</a></li>
+
+                        {% block ul %}
+                        <li><a href="/#top">Home</a></li>
+                        <li><a href="/#featured">Nossos Cursos</a></li>
+                        <li><a href="/#projects">Sobre Nós</a></li>
+                        <li><a href="/#contact">Contato</a></li>
+
+                        {% endblock ul %}
+
                     </ul>
                 </nav>
             </div>
@@ -117,11 +122,11 @@
             <nav>
                 <ul>
                     <li>
-                        {% block li %}<a href="#top">
+                        <a href="#top">
                             <span class="rect"></span>
                             <span class="circle"></span>
                             Home
-                        </a>{% endblock li %}
+                        </a>
                     </li>
                     <li>
                         <a href="#featured">
@@ -403,7 +408,7 @@
 
 
 
-        {% block contact %}
+
         <section id="contact" class="content-section">
                 <div id="map">
                     <iframe width="100%" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=rua%20tenente%20coronel%20cardoso%20422%20sala%2002&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
@@ -417,7 +422,7 @@
 
                     </div>
                     <div class="section-content">
-                        <form id="contact" action="#" method="POST">
+                            <form id="contact" action="#" method="POST">
                             {% csrf_token %}
                             <div class="row">
                                 <div class="col-md-4">
@@ -451,16 +456,14 @@
                 </div>
             </section>
 
-        {% endblock contact %}
 
+{% endblock body %}
 
         <section class="footer">
                 <p>Copyright &copy; {% now "Y" %} NOVA Base Cursos</p>
         </section>
 
-            {% endblock body %}
 
-
-
+</div>
 </body>
 </html>

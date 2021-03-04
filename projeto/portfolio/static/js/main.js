@@ -72,13 +72,15 @@ jQuery(document).ready(function($) {
 
         var contentSection = $('.content-section, .main-banner');
         var navigation = $('nav');
-        
+
+
         //when a nav link is clicked, smooth scroll to the section
         navigation.on('click', 'a', function(event){
+            (window.location.pathname == "portfolio/base.html") {
             event.preventDefault(); //prevents previous event
             smoothScroll($(this.hash));
-        });
-        
+
+
         //update navigation on scroll...
         $(window).on('scroll', function(){
             updateNavigation();
