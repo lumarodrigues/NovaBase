@@ -56,14 +56,11 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
-    'django.middleware.security.SecurityMiddleware',
+
 ]
 
 
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-SECURE_SSL_REDIRECT = True
 
-ROOT_URLCONF = 'projeto.urls'
 
 TEMPLATES = [
     {
@@ -83,8 +80,8 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'projeto.wsgi.application'
 
-# Configuração de envio de email
 
+# Configuração de envio de email
 
 EMAIL_BACKEND = config('EMAIL_BACKEND')
 SENDGRID_API_KEY = config('SENDGRID_API_KEY')
