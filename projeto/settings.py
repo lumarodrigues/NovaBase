@@ -27,6 +27,9 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', cast=bool)
 
+# Redirect to HTTPS:
+SECURE_SSL_REDIRECT = not DEBUG
+
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 
 
@@ -60,6 +63,7 @@ MIDDLEWARE = [
 ]
 
 
+ROOT_URLCONF = 'projeto.urls'
 
 
 TEMPLATES = [

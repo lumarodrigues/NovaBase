@@ -12,5 +12,3 @@ AWS_STORAGE_BUCKET_NAME = Nome do bucket
 EMAIL_BACKEND =
 SENDGRID_API_KEY = API Key do Sendgrid
 EMAIL_USER =
-
-
