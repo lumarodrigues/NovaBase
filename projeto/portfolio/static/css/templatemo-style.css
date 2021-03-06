@@ -9,6 +9,12 @@ body {
   font-family: 'Nova';
 }
 
+html, body {
+margin: 0;
+padding: 0;
+height: 100%;
+}
+
 
 
 p {
@@ -874,14 +880,18 @@ header {
 
 .footer {
 
-  background-color: rgba(0,0,102,0.90);
+    position: absolute;
+
+  background-color: rgba(0,0,160,0.90);
   height: 80px;
   line-height: 80px;
   display: inline-block;
   text-align: center;
   width: 100%;
+  bottom: 0px;
 
 }
+
 
 .footer p {
   margin-bottom: 0px;
@@ -905,6 +915,16 @@ header {
 /* Responsive Style */
 
 @media (max-width: 992px) {
+
+
+   .Modern-Slider .info h1 {
+    text-align: center;
+    right: 0px;
+    padding: 0px 30px;
+    display: inline-block;
+  }
+
+
 
   .responsive-nav {
     display: none;
@@ -941,11 +961,12 @@ header {
     width: 100%;
   }
 
-  .Modern-Slider .info {
-    text-align: center;
-    right: 0px;
-    padding: 0px 30px;
-  }
+    .info {
+
+        align: center;
+
+    }
+
 
   .Modern-Slider .NextArrow{
     outline: none;

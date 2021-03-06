@@ -2,12 +2,14 @@
 
 {% load static %}
 
+{% block title %}<title>Curso Rápido</title>{% endblock title %}
+
 {% block body %}
 
 <div class="page-content">
         <section id="projects" class="content-section">
                 <div class="section-heading">
-                    <h1>Curso<br><em>Rápido</em></h1>
+                    <h1><em>Curso Rápido</em></h1>
                     <h3><em>Público alvo:</em> Usuários que tem pressa em aprender as principais ferramentas de utilização do computador (Windows,
                     Word e Excel) e também todo o conceito essencial para a navegação e utilização da internet.
                         <br>
@@ -25,10 +27,10 @@
                         <em>Cursos no pacote:</em>
                         <br>
                         <br>
-                        &#9655; Express (24 horas)
+                        &#9655; <a href="{% url 'express' %}">Express (24 horas)</a>
                         <br>
                         <br>
-                        &#9655; Internet (12 horas)
+                        &#9655; <a href="{% url 'internet' %}">Internet (12 horas)</a>
                         <br>
                         <br>
                     </h3>

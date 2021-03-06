@@ -2,6 +2,8 @@
 
 {% load static %}
 
+{% block title %}<title>Desenvolvimento Web</title>{% endblock title %}
+
                         {% block ul %}
 
                         <li><a href="/#top">Home</a></li>
@@ -16,20 +18,21 @@
 <div class="page-content">
         <section id="projects" class="content-section">
                 <div class="section-heading">
-                    <h1>Desenvolvimento<br><em>Web</em></h1>
+                    <h1><em>Desenvolvimento Web</em></h1>
                     <h3><em>Cursos disponíveis na área:</em>
                         <br>
                         <br>
-                        &#9655; <a href="{% url 'html5' %}">HTML5</a>
-                        <br>
-                        <br>
                         &#9655; <a href="{% url 'css3' %}">CSS3</a>
+                        <br>
+                        <br>
+                        &#9655; <a href="{% url 'html5' %}">HTML5</a>
                         <br>
                         <br>
                     </h3>
                 </div>
 
             </section>
+
 
 {% endblock body %}
 </div>

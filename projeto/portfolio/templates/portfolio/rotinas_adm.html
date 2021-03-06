@@ -2,12 +2,14 @@
 
 {% load static %}
 
+{% block title %}<title>Rotinas Administrativas</title>{% endblock title %}
+
 {% block body %}
 
 <div class="page-content">
        <section id="projects" class="content-section">
                 <div class="section-heading">
-                    <h1>Rotinas<br><em>Administrativas</em></h1>
+                    <h1><em>Rotinas Administrativas</em></h1>
                     <h3><em>Público alvo:</em>
                         A usuários que desejam estar mais preparados para o mercado de trabalho, pois, é importante que se
                         tenha um conhecimento administrativo amplo da empresa. Esse curso prepara o aluno para entender
@@ -29,22 +31,22 @@
                         <em>Cursos no pacote:</em>
                         <br>
                         <br>
-                        &#9655; Administração (12 horas)
+                        &#9655; <a href="{% url 'administracao' %}">Administração (12 horas)</a>
                         <br>
                         <br>
-                        &#9655; Contabilidade (8 horas)
+                        &#9655; <a href="{% url 'contabilidade' %}">Contabilidade (8 horas)</a>
                         <br>
                         <br>
-                        &#9655; Departamento Pessoal (8 horas)
+                        &#9655; <a href="{% url 'departamento_pessoal' %}">Departamento Pessoal (8 horas)</a>
                         <br>
                         <br>
-                        &#9655; Secretariado (12 horas)
+                        &#9655; <a href="{% url 'secretariado' %}">Secretariado (12 horas)</a>
                         <br>
                         <br>
-                        &#9655; Técnicas de Redação (8 horas)
+                        &#9655; <a href="{% url 'tecnicas_redacao' %}">Técnicas de Redação (8 horas)</a>
                         <br>
                         <br>
-                        &#9655; Telemarketing (12 horas)
+                        &#9655; <a href="{% url 'telemarketing' %}">Telemarketing (12 horas)</a>
                         <br>
                         <br>
                     </h3>

@@ -2,15 +2,17 @@
 
 {% load static %}
 
+{% block title %}<title>Designer Gráfico I e II</title>{% endblock title %}
+
 {% block body %}
 
 <div class="page-content">
         <section id="projects" class="content-section">
                 <div class="section-heading">
-                    <h1>Designer Gráfico<br><em>I e II</em></h1>
+                    <h1><em>Designer Gráfico I e II</em></h1>
                     <br>
                     <br>
-                    <h2>Designer Gráfico I</h2>
+                    <h2><em>Designer Gráfico I</em></h2>
                     <h3><em>Público alvo:</em> Usuários iniciantes que procuram um curso introdutório na área de design gráfico.
                         <br>
                         <br>
@@ -27,13 +29,13 @@
                         <em>Cursos no pacote:</em>
                         <br>
                         <br>
-                        &#9655; CorelDRAW (20 horas)
+                        &#9655; <a href="{% url 'corel_draw' %}">CorelDRAW (20 horas)</a>
                         <br>
                         <br>
-                        &#9655; Photoshop (24 horas)
+                        &#9655; <a href="{% url 'photoshop' %}">Photoshop (24 horas)</a>
                         <br>
                         <br>
-                        &#9655; Photoshop para Fotografia (24 horas)
+                        &#9655; <a href="{% url 'photoshop_fotografia' %}">Photoshop para Fotografia (24 horas)</a>
                         <br>
                         <br>
 
@@ -42,7 +44,7 @@
 
                     <br>
                     <br>
-                    <h2>Designer Gráfico II</h2>
+                    <h2><em>Designer Gráfico II</em></h2>
                     <h3><em>Público alvo:</em> Usuários que procuram um curso completo na área de design gráfico. Além de ter a formação em
                         programas para artes finais, o aluno terá conhecimento para que possa trabalhar com editoração de
                         jornais/revistas/documentos.
@@ -64,10 +66,10 @@
                         &#9655; Designer Gráfico I (72 horas)
                         <br>
                         <br>
-                        &#9655; Illustrator (24 horas)
+                        &#9655; <a href="{% url 'illustrator' %}">Illustrator (24 horas)</a>
                         <br>
                         <br>
-                        &#9655; InDesign (24 horas)
+                        &#9655; <a href="{% url 'indesign' %}">InDesign (24 horas)</a>
                         <br>
                         <br>
                     </h3>

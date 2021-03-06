@@ -1,15 +1,15 @@
 {% load static %}
 
+
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>NOVA Base Cursos</title>
+        {% block title %}<title>NOVA Base Cursos</title>{% endblock title %}
 
-        <meta name="description" content="">
+        <meta name="description" content="Nova Base Cursos">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" href="{% static 'apple-touch-icon.png' %}">
 
         <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
         <link rel="stylesheet" href="{% static 'css/bootstrap-theme.min.css' %}">
@@ -184,17 +184,17 @@
                 <!-- Item -->
                 <div class="item item-1">
                     <div class="img-fill">
-                    <div class="image"></div>
-                    <div class="info">
-                        <div>
-                          <h1>NOVA Base<br>Cursos</h1>
-                          <p>Cursos presenciais ou EAD<br>
-                          	Temos o melhor pacote para você!</p>
-                          <div class="white-button button">
-                              <a href="#featured">Saiba Mais</a>
-                          </div>
-                        </div>
-                        </div>
+                        <div class="image"></div>
+                        <div class="info">
+                            <div>
+                              <h1>NOVA Base<br>Cursos</h1>
+                              <p>Cursos presenciais ou EAD<br>
+                                Temos o melhor pacote para você!</p>
+                              <div class="white-button button">
+                                  <a href="#featured">Saiba Mais</a>
+                              </div>
+                            </div>
+                            </div>
                     </div>
                 </div>
                 <!-- // Item -->
@@ -359,7 +359,6 @@
                     </div>
                 </div>
             </section>
-
             <section id="projects" class="content-section">
                 <div class="section-heading">
                     <h1><em>Sobre Nós</em></h1>
@@ -405,8 +404,6 @@
                     </div>
                 </div>
             </section>
-
-
 
 
         <section id="contact" class="content-section">

@@ -2,15 +2,17 @@
 
 {% load static %}
 
+{% block title %}<title>Operador de Computador</title>{% endblock title %}
+
 {% block body %}
 
 <div class="page-content">
         <section id="projects" class="content-section">
                 <div class="section-heading">
-                    <h1>Operador de Computador<br><em>I e II</em></h1>
+                    <h1><em>Operador de Computador I e II</em></h1>
                     <br>
                     <br>
-                    <h2>Operador de Computador I</h2>
+                    <h2><em>Operador de Computador I</em></h2>
                     <h3><em>Público alvo:</em> A usuários iniciantes que desejam aprender a utilizar o computador e os programas essenciais utilizados
                         no mercado, em um tempo mais rápido.
                         <br>
@@ -28,13 +30,13 @@
                         <em>Cursos no pacote:</em>
                         <br>
                         <br>
-                        &#9655; Windows (20 horas)
+                        &#9655; <a href="{% url 'excel' %}">Excel (24 horas)</a>
                         <br>
                         <br>
-                        &#9655; Word (24 horas)
+                        &#9655; <a href="{% url 'windows' %}">Windows (20 horas)</a>
                         <br>
                         <br>
-                        &#9655; Excel (24 horas)
+                        &#9655; <a href="{% url 'word' %}">Word (24 horas)</a>
                         <br>
                         <br>
 
@@ -43,7 +45,7 @@
 
                     <br>
                     <br>
-                    <h2>Operador de Computador II</h2>
+                    <h2><em>Operador de Computador II</em></h2>
                     <h3><em>Público alvo:</em> Usuários iniciantes que desejam aprender a utilizar o computador, além dos programas essenciais
                         (Windows, Word, Excel), o pacote inclui o PowerPoint para que o aluno aprenda realizar apresentações
                         de trabalhos escolares ou trabalhos na empresa que trabalha. Além disso, terá um curso completo de
@@ -63,22 +65,24 @@
                         <em>Cursos no pacote:</em>
                         <br>
                         <br>
-                        &#9655; Windows (20 horas)
+
+                        &#9655; <a href="{% url 'montagem_curriculo' %}">Como Montar Seu Currículo (6 horas)</a>
                         <br>
                         <br>
-                        &#9655; Word (24 horas)
+                        &#9655; <a href="{% url 'excel' %}">Excel (24 horas)</a>
                         <br>
                         <br>
-                        &#9655; Excel (24 horas)
+                        &#9655; <a href="{% url 'internet' %}">Internet (12 horas)</a>
                         <br>
                         <br>
-                        &#9655; PowerPoint (24 horas)
+                        &#9655; <a href="{% url 'power_point' %}">PowerPoint (24 horas)</a>
                         <br>
                         <br>
-                        &#9655; Internet (12 horas)
+                        &#9655; <a href="{% url 'windows' %}">Windows (20 horas)</a>
                         <br>
                         <br>
-                        &#9655; Como montar seu currículo (6 horas)
+                        &#9655; <a href="{% url 'word' %}">Word (24 horas)</a>
+
                         <br>
                         <br>
                     </h3>

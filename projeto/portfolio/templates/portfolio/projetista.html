@@ -2,12 +2,14 @@
 
 {% load static %}
 
+{% block title %}<title>Projetista Completo</title>{% endblock title %}
+
 {% block body %}
 
 <div class="page-content">
         <section id="projects" class="content-section">
                 <div class="section-heading">
-                    <h1>Projetista<br><em>Completo</em></h1>
+                    <h1><em>Projetista Completo</em></h1>
                     <h3><em>Público alvo:</em>
                        Usuários que desejam dominar além do AutoCAD, entrando em contato com ferramentas de desenho
                         que utilizam novas tecnologias.
@@ -26,16 +28,17 @@
                         <em>Cursos no pacote:</em>
                         <br>
                         <br>
-                        &#9655; AutoCAD Total (104 horas)
+                        &#9655; <a href="{% url 'autocad_total' %}">AutoCAD Total (104 horas)</a>
                         <br>
                         <br>
-                        &#9655; SketchUP (12 horas)
+                        &#9655; <a href="{% url 'revit_base' %}">Revit - Base (36 horas)</a>
+
                         <br>
                         <br>
-                        &#9655; Revit (36 horas)
+                        &#9655; <a href="{% url 'sketchup' %}">SketchUP (12 horas)</a>
                         <br>
                         <br>
-                        &#9655; SolidWorks (24 horas)
+                        &#9655; <a href="{% url 'solidworks' %}">SolidWorks (24 horas)</a>
                         <br>
                         <br>
                     </h3>

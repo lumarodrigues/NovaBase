@@ -2,6 +2,8 @@
 
 {% load static %}
 
+{% block title %}<title>Profissionalizante</title>{% endblock title %}
+
 {% block body %}
 
 <div class="page-content">
@@ -27,16 +29,17 @@
                         <em>Cursos no pacote:</em>
                         <br>
                         <br>
-                         &#9655; Operador de computador II (110h)
+                        &#9655; <a href="{% url 'corel_draw' %}">CorelDRAW (24 horas)</a>
+
                                                 <br>
                         <br>
-                         &#9655; CorelDRAW (24 horas)
+                        &#9655; <a href="{% url 'operador_computador' %}">Operador de Computador II (110h)</a>
                         <br>
                         <br>
-                         &#9655; Photoshop (24 horas)
+                        &#9655; <a href="{% url 'photoshop' %}">Photoshop (24 horas)</a>
                         <br>
                         <br>
-                         &#9655; Rotinas administrativas (60h)
+                        &#9655; <a href="{% url 'rotinas_adm' %}">Rotinas Administrativas (60h)</a>
                         <br>
                         <br>
                     </h3>

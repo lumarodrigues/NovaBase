@@ -2,19 +2,22 @@
 
 {% load static %}
 
+{% block title %}<title>Modelagem 3D</title>{% endblock title %}
+
 {% block body %}
 
 <div class="page-content">
         <section id="projects" class="content-section">
                 <div class="section-heading">
-                    <h1>Design de <br><em>peças mecânicas e arquitetura</em></h1>
+                    <h1><em>Design de peças mecânicas e arquitetura</em></h1>
                     <h3><em>Cursos disponíveis na área:</em>
                         <br>
                         <br>
-                        &#9655; <a href="{% url 'autocad_base' %}">AutoCAD - Base</a>
-                        <br>
-                        <br>
                         &#9655; <a href="{% url 'autocad_3dcivil' %}">AutoCAD - 3D Civil</a>
+
+                        <br>
+                        <br>
+                        &#9655; <a href="{% url 'autocad_base' %}">AutoCAD - Base</a>
                                                 <br>
                         <br>
                         &#9655; <a href="{% url 'autocad_mecanica_base' %}">AutoCAD - Mecânica Base</a>
@@ -23,13 +26,13 @@
                         &#9655; <a href="{% url 'autocad_projeto_civil' %}">AutoCAD - Projeto Civil</a>
                                                 <br>
                         <br>
-                        &#9655; <a href="{% url 'solidworks' %}">Solidworks</a>
-                                                <br>
-                        <br>
                         &#9655; <a href="{% url 'revit_base' %}">Revit - Base</a>
-                                                <br>
+                                                                        <br>
                         <br>
                         &#9655; <a href="{% url 'sketchup' %}">SketchUp</a>
+                                                <br>
+                        <br>
+                        &#9655; <a href="{% url 'solidworks' %}">SolidWorks</a>
                                                 <br>
                         <br>
                     </h3>

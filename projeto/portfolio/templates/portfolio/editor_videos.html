@@ -2,12 +2,14 @@
 
 {% load static %}
 
+{% block title %}<title>Editor de Vídeos</title>{% endblock title %}
+
 {% block body %}
 
 <div class="page-content">
         <section id="projects" class="content-section">
                 <div class="section-heading">
-                    <h1>Editor de<br><em>Vídeos</em></h1>
+                    <h1><em>Editor de Vídeos</em></h1>
                     <h3><em>Público alvo:</em>
                         Usuários que procuram um curso para iniciar seu trabalho na área de produção audiovisual.
                         <br>
@@ -25,15 +27,16 @@
                         <em>Cursos no pacote:</em>
                         <br>
                         <br>
-                        &#9655; Photoshop (24 horas)
+                        &#9655; <a href="{% url 'after_effects' %}">After Effects (24 horas)</a>
                         <br>
                         <br>
-                        &#9655; Premiere (24 horas)
+                        &#9655; <a href="{% url 'photoshop' %}">Photoshop (24 horas)</a>
                         <br>
                         <br>
-                        &#9655; After Effects (24 horas)
+                        &#9655; <a href="{% url 'premiere_pro' %}">Premiere Pro (24 horas)</a>
                         <br>
                         <br>
+
                     </h3>
                 </div>
 
