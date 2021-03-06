@@ -880,15 +880,12 @@ header {
 
 .footer {
 
-    position: absolute;
-
-  background-color: rgba(0,0,0,0.90);
+  background-color: rgba(0,0,102,0.90);
   height: 80px;
   line-height: 80px;
   display: inline-block;
   text-align: center;
   width: 100%;
-  bottom: 0px;
 
 }
 
