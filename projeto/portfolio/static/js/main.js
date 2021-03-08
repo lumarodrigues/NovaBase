@@ -1,4 +1,5 @@
 jQuery(document).ready(function($) {
+
     'use strict';
 
 
@@ -72,13 +73,14 @@ jQuery(document).ready(function($) {
         var contentSection = $('.content-section, .main-banner');
         var navigation = $('nav');
 
-
-
         //when a nav link is clicked, smooth scroll to the section
         navigation.on('click', 'a', function(event){
+        if (window.location.pathname == '/') {
             event.preventDefault(); //prevents previous event
             smoothScroll($(this.hash));
-        });
+        }
+
+         });
 
         //update navigation on scroll...
         $(window).on('scroll', function(){
@@ -102,22 +104,11 @@ jQuery(document).ready(function($) {
                 }
             });
         }
-
-
-
         function smoothScroll(target){
-            if (target.offset() == undefined) {
-
-            window.location.href = "/"
-
-            }
-            else {
             $('body,html').animate({
                 scrollTop: target.offset().top
-
-            }, 800);}
+            }, 800);
         }
-
 
 
         $('.button a[href*=#]').on('click', function(e) {
