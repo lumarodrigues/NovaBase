@@ -1,4 +1,5 @@
 from projeto import settings
+import pytest
 
 
 @pytest.fixture(autouse=True)
